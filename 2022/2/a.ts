@@ -42,3 +42,5 @@ function getRoundPoints(playerChoice: PlayerChoice, result: RoundOutcome){
 }
 
 
+// Example of a another solution
+// https://github.com/t3dotgg/aoc-2022/blob/main/2/a.ts

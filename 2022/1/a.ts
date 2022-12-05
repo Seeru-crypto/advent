@@ -17,3 +17,5 @@ arr.forEach((elve, index) => {
 
 console.log("elveCalorieSum ", elveCalorieSum)
 console.log("elveIndex ", elveIndex + 1)
+
+// Another solution https://github.com/t3dotgg/aoc-2022/blob/main/1/a.ts
