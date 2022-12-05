@@ -1,15 +1,18 @@
 const data = await Deno.readTextFile("./data.txt")
+//const data = await Deno.readTextFile("./data.test.txt")
 
-const groupedStrings = data.split("\n\n")
+const groupedStrings: string[]= (data.split("\n\n"));
 
-const arr = groupedStrings.map(index => index.split(" ").map(num => Number(num)));
+const numberArray : number[][] = groupedStrings.map(grp => grp.split("\n").map(number => Number(number)))
+console.log(numberArray)
+
 
 let elveIndex : number = 0;
 let elveCalorieSum : number = 0;
 
-arr.forEach((elve, index) => {
+numberArray.forEach((elve, index) => {
     const elveCalories = elve.reduce((a, b) => a + b);
-    if (elveCalories > elveCalorieSum) {
+    if (elveCalories >= elveCalorieSum) {
         elveCalorieSum = elveCalories;
         elveIndex = index
     }
