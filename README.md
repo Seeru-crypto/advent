@@ -1,6 +1,6 @@
 # advent of code
 
-https://adventofcode.com/
+[AOC](https://adventofcode.com/)
 
 deno run --allow-read <fileName>
 
