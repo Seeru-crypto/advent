@@ -4,8 +4,6 @@ const data = await Deno.readTextFile("./data.txt")
 const groupedStrings: string[]= (data.split("\n\n"));
 
 const numberArray : number[][] = groupedStrings.map(grp => grp.split("\n").map(number => Number(number)))
-console.log(numberArray)
-
 
 let elveIndex : number = 0;
 let elveCalorieSum : number = 0;
